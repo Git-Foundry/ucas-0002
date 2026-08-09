@@ -1,0 +1,332 @@
+{
+  "iterations": [
+    {
+      "iteration": 1,
+      "findings": [
+        {
+          "file": "index.html",
+          "severity": "major",
+          "issue": "The phrase 'reduces drop-off' or 'reducing drop-off' is repeated multiple times across different sections (How It Works, Features List, Traction) when describing the benefits of direct messaging.",
+          "fix": "Rephrase some instances to avoid direct repetition. For example:\n- How It Works (Connect and Apply): 'minimising application abandonment and improving match quality.'\n- Features List (Direct Messaging): 'This helps prevent applications from being abandoned and accelerates placements for both sides.'\n- Traction (Direct): 'Direct messaging streamlines the process, leading to fewer abandoned applications.'",
+          "source": "text"
+        },
+        {
+          "file": "index.html",
+          "severity": "blocker",
+          "issue": "The Open Graph metadata contains placeholder text `__SITE_BASE_URL__` in the `og:image` and `og:url` properties, which will lead to broken links and incorrect social media previews if not replaced.",
+          "fix": "Replace `__SITE_BASE_URL__` with the actual base URL of the live website, e.g., `https://www.ucas.marketplace/og-image.png` and `https://www.ucas.marketplace/index.html`.",
+          "source": "text"
+        },
+        {
+          "file": "404.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: arial",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 3.8:1 (need 4.5:1) — text #718096 on #f7f8fa",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 4.0:1 (need 4.5:1) — text #718096 on #ffffff",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 3.8:1 (need 4.5:1) — text #718096 on #f7f8fa",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 3.8:1 (need 4.5:1) — text #718096 on #f7f8fa",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 31 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"problem-solution__problem\": children flush against border+bg on top/right/left (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"problem-solution__answer\": children flush against bg on top/right/left (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"features-list\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <li> \"features-list__item\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <li> \"features-list__item\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <li> \"features-list__item\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <li> \"features-list__item\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <li> \"features-list__item\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"traction\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"faq-accordion__list\": children flush against border-top on top (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"cta-banner\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "tight-leading",
+          "issue": "Tight line height: line-height 1.12x (need >=1.3)",
+          "fix": "Line height below 1.3x the font size makes multi-line text hard to read. Use 1.5 to 1.7 for body text so lines have room to breathe.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: inter",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "em-dash-overuse",
+          "issue": "Em-dash overuse: 7 em-dashes in body text",
+          "fix": "More than two em-dashes (— or --) in body copy is an AI cadence tell. Use commas, colons, periods, or parentheses instead.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "minor",
+          "antipattern": "numbered-section-markers",
+          "issue": "Numbered section markers (01 / 02 / 03): Sequence: 01, 02, 03, 04, 05",
+          "fix": "Numbered display markers as section labels (01, 02, 03) are the AI editorial scaffold one tier deeper than tracked eyebrow chips. If you find yourself reaching for them, choose a different section cadence.",
+          "source": "detector"
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "findings": [
+        {
+          "file": "index.html",
+          "severity": "major",
+          "issue": "The phrase 'minimising application abandonment' or variations ('prevent applications from being abandoned', 'fewer abandoned applications') is repeated across the 'How it works', 'What the platform does', and 'Where UCAS stands today' sections. While conveying a valid point, the repetition and slightly formal phrasing could be improved for stylistic variety and impact.",
+          "fix": "Review and rephrase these instances to use more varied and direct language. For example:\n- In 'How it works' (step 3): 'Direct messaging allows both sides to ask questions before applying, leading to more submitted applications and better match quality.'\n- In 'What the platform does' (Direct Messaging): 'This helps ensure questions are answered before an application is submitted, reducing unsubmitted applications and accelerating placements for both sides.'\n- In 'Where UCAS stands today' (Direct): 'Direct messaging streamlines the process, resulting in more completed applications.'",
+          "source": "text"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 4.0:1 (need 4.5:1) — text #718096 on #ffffff",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 3.8:1 (need 4.5:1) — text #718096 on #f7f8fa",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 31 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"problem-solution__problem\": children flush against border+bg on top/right/left (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"problem-solution__answer\": children flush against bg on top/right/left (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"features-list\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <li> \"features-list__item\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <li> \"features-list__item\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <li> \"features-list__item\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <li> \"features-list__item\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <li> \"features-list__item\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"traction\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"cta-banner\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "tight-leading",
+          "issue": "Tight line height: line-height 1.12x (need >=1.3)",
+          "fix": "Line height below 1.3x the font size makes multi-line text hard to read. Use 1.5 to 1.7 for body text so lines have room to breathe.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: inter",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "minor",
+          "antipattern": "numbered-section-markers",
+          "issue": "Numbered section markers (01 / 02 / 03): Sequence: 01, 02, 03, 04, 05",
+          "fix": "Numbered display markers as section labels (01, 02, 03) are the AI editorial scaffold one tier deeper than tracked eyebrow chips. If you find yourself reaching for them, choose a different section cadence.",
+          "source": "detector"
+        }
+      ]
+    }
+  ],
+  "generated": "2026-08-09T08:22:21.849Z"
+}
